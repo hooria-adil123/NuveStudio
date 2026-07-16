@@ -16,6 +16,15 @@
 }
 
 /* Base custom styles */
+html {
+  font-size: 115%; /* Base 18.4px */
+}
+@media (min-width: 1024px) {
+  html {
+    font-size: 125%; /* Base 20px on desktop */
+  }
+}
+
 body {
   background-color: var(--color-nuve-cream);
   color: var(--color-nuve-espresso);
