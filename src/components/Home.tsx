@@ -4,6 +4,9 @@ import { PROJECTS, SERVICES } from '../data';
 import { Page } from '../types';
 import { ArrowRight, ArrowUpRight, ChevronLeft, ChevronRight, Compass, Sparkles, Layers } from 'lucide-react';
 
+import heroPlasterInteriorImg from '../assets/images/hero_plaster_interior_1784203156784.jpg';
+import bedroomOrganicImg from '../assets/images/bedroom_organic_1784203171535.jpg';
+
 interface HomeProps {
   onNavigate: (page: Page, id?: string) => void;
 }
@@ -16,7 +19,7 @@ const MATERIALS_PALETTE = [
     origin: 'Alentejo quarries, Portugal',
     feeling: 'Glance-free velvet warmth',
     description: 'Applied entirely by hand with coarse local sands. It retains the rhythmic sweeps of the artisan trowel, absorbing direct sunlight and turning glare into soft shadows.',
-    image: '/src/assets/images/hero_plaster_interior_1784203156784.jpg'
+    image: heroPlasterInteriorImg
   },
   {
     id: 'ancient-travertine',
@@ -339,7 +342,7 @@ export default function Home({ onNavigate }: HomeProps) {
               <div className="w-7/12 relative overflow-hidden aspect-[4/5] border border-nuve-stone/10 bg-nuve-cream group z-10 -mt-10">
                 <div className="absolute inset-0 bg-nuve-espresso/5 z-10 pointer-events-none group-hover:bg-transparent transition-colors duration-500" />
                 <img
-                  src="/src/assets/images/bedroom_organic_1784203171535.jpg"
+                  src={bedroomOrganicImg}
                   alt="Organic bed curves and textured linen plaster"
                   referrerPolicy="no-referrer"
                   className="w-full h-full object-cover group-hover:scale-104 transition-transform duration-700"

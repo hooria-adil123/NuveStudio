@@ -1,5 +1,10 @@
 import { Project, Service, JournalArticle } from './types';
 
+import diningSerraNicheImg from './assets/images/dining_serra_niche_1784203186446.jpg';
+import deskSableLightImg from './assets/images/desk_sable_light_1784203207473.jpg';
+import heroPlasterInteriorImg from './assets/images/hero_plaster_interior_1784203156784.jpg';
+import bedroomOrganicImg from './assets/images/bedroom_organic_1784203171535.jpg';
+
 export const PROJECTS: Project[] = [
   {
     id: 'serra-niche',
@@ -10,7 +15,7 @@ export const PROJECTS: Project[] = [
     number: '01/08',
     description: 'Mediterranean calm meets sculptural tactility. Muted tones and raw textures shape a serene dining atmosphere.',
     fullDescription: 'Serra Niche is a deep study of coastal slowness. Located in the heart of Mallorca, this boutique restaurant space combines a handcrafted plaster banquette, monolithic raw timber dining tables, and striking tiered woven jute fixtures that cast a soft, nested glow. Every detail, from the textured plaster walls to the weathered olive planters, is custom-tailored to foster an atmosphere of pure presence and culinary intimacy.',
-    primaryImage: '/src/assets/images/dining_serra_niche_1784203186446.jpg',
+    primaryImage: diningSerraNicheImg,
     secondaryImage: 'https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=800&q=80',
     accentColors: ['#B8A28E', '#6E725F', '#E6E1D8'],
     paletteNames: ['sandstone', 'olive', 'soft linen white'],
@@ -32,7 +37,7 @@ export const PROJECTS: Project[] = [
     number: '02/08',
     description: 'Crafted for clarity and calm. Neutral tones and quiet materials shape a focused, reflective work sanctuary.',
     fullDescription: 'Sable Light reimagines the traditional office as an oasis of absolute stillness. Nestled inside a sun-washed Lisbon flat, this space features a minimal solid-wood floating desk anchored against a recessed arched window. Textured pampas grass stands in rustic ceramic vases, while a tactile white boucle lounge chair invites comfortable reflection. Soft light filters through linen curtains, playing with geometric desk alignments and bringing organic quiet luxury to the workday.',
-    primaryImage: '/src/assets/images/desk_sable_light_1784203207473.jpg',
+    primaryImage: deskSableLightImg,
     secondaryImage: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=800&q=80',
     accentColors: ['#8C7C6D', '#D9C8B5', '#ECE8E1'],
     paletteNames: ['ash wood', 'oat beige', 'soft ivory white'],
@@ -54,7 +59,7 @@ export const PROJECTS: Project[] = [
     number: '03/08',
     description: 'Our signature living space utilizing curved plaster walls and low, organic dark oak elements.',
     fullDescription: 'Ocular Plaster is a boutique residential sanctuary designed around fluid movement and sculptural form. Located in Athens, the living space is dominated by an immersive, hand-crafted plaster hearth and a large, organically curved irregular mirror that doubles the warm, natural light. Minimal dark-oak furniture floats along the floor plane, grounded by a low round floor cushion and sculptural potted bonsai trees that add a touch of dynamic life to the quiet, mineral-toned room.',
-    primaryImage: '/src/assets/images/hero_plaster_interior_1784203156784.jpg',
+    primaryImage: heroPlasterInteriorImg,
     secondaryImage: 'https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=800&q=80',
     accentColors: ['#32251D', '#D7CEBF', '#4A5043'],
     paletteNames: ['espresso oak', 'warm plaster', 'deep forest'],
@@ -76,7 +81,7 @@ export const PROJECTS: Project[] = [
     number: '04/08',
     description: 'A luxury minimalist bedroom with textured plaster walls and organic architectural curves.',
     fullDescription: 'Curved Slumber represents the ultimate intersection of modern architectural minimalism and cozy Scandinavian hygge. Situated in Oslo, this primary bedroom is sculpted as a continuous plaster envelope. The low-profile platform bed curves seamlessly out of the floor, draped in heavy natural linens. High wooden window pillars frame views of misty pine forests, flooding the interior with cool Northern light that is softened by the tactile warmth of custom oak logs and a circular wool pouf.',
-    primaryImage: '/src/assets/images/bedroom_organic_1784203171535.jpg',
+    primaryImage: bedroomOrganicImg,
     secondaryImage: 'https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=800&q=80',
     accentColors: ['#5E4C41', '#CBBFB0', '#2E352B'],
     paletteNames: ['brushed timber', 'organic linen', 'misty pine'],
