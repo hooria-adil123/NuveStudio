@@ -1,0 +1,6 @@
+{
+  "name": "Nuve Studio",
+  "description": "A boutique interior design studio crafting light-filled, emotionally resonant spaces with purpose and depth.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

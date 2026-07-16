@@ -1,0 +1,84 @@
+@import "tailwindcss";
+
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,200;0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,200;1,9..144,300;1,9..144,400;1,9..144,500;1,9..144,600&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+
+@theme {
+  --font-serif: "Fraunces", Georgia, serif;
+  --font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+
+  --color-nuve-cream: #F4F0E8;
+  --color-nuve-espresso: #2A2019;
+  --color-nuve-clay: #B08968;
+  --color-nuve-sand: #DCD2C0;
+  --color-nuve-ivory: #FAF8F4;
+  --color-nuve-stone: #8A8072;
+}
+
+/* Base custom styles */
+body {
+  background-color: var(--color-nuve-cream);
+  color: var(--color-nuve-espresso);
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Hairline borders style */
+.hairline-b {
+  border-bottom: 1px solid rgba(138, 128, 114, 0.2);
+}
+.hairline-t {
+  border-top: 1px solid rgba(138, 128, 114, 0.2);
+}
+.hairline-l {
+  border-left: 1px solid rgba(138, 128, 114, 0.2);
+}
+.hairline-r {
+  border-right: 1px solid rgba(138, 128, 114, 0.2);
+}
+.hairline-all {
+  border: 1px solid rgba(138, 128, 114, 0.2);
+}
+
+/* Custom layout scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-nuve-cream);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-nuve-stone);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-nuve-clay);
+}
+
+/* Elegant serif emphasis */
+.font-serif-italic {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-weight: 300;
+}
+
+/* Animated marquee custom utility */
+@keyframes marquee {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee 35s linear infinite;
+}
+
+/* Ambient Grain Overlay effect */
+.bg-grain {
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0%200%20200%20200'%20xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter%20id='noiseFilter'%3E%3CfeTurbulence%20type='fractalNoise'%20baseFrequency='0.65'%20numOctaves='3'%20stitchTiles='stitch'/%3E%3C/filter%3E%3Crect%20width='100%25'%20height='100%25'%20filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+  opacity: 0.045;
+  pointer-events: none;
+}
