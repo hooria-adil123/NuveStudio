@@ -17,11 +17,11 @@
 
 /* Base custom styles */
 html {
-  font-size: 115%; /* Base 18.4px */
+  font-size: 135%; /* Base 21.6px for better readability */
 }
 @media (min-width: 1024px) {
   html {
-    font-size: 125%; /* Base 20px on desktop */
+    font-size: 150%; /* Base 24px on desktop */
   }
 }
 
